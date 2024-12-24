@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">ADRIÁN</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/logo.jpg" alt="logo" />
+        </div>
+        <h1>ADRIAN GALLO</h1>
+        <h2>Ingeniero de Sistemas - Backend</h2>
+        <div class="redes">
+          <a href="https://github.com/Percosec" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=galloquispeadrian@gmail.com"
+            target="_blank"
+            ><i class="fa-solid fa-g"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          Soy una persona proactiva, organizada y responsable. Mi objetivo es aplicar mis conocimientos teóricos y prácticos aprendidos durante mi formación académica con el fin de desarrollarme de forma profesional  y personal.
+        </p>
+
+        <div class="fila">
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Teléfono</strong>
+                +51 946547574
+              </li>
+              <li>
+                <strong>Email</strong>
+                galloquispeadrian@gmail.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1R2IYumAulRgU5P7QdBzWQolK2Iu5RVpD/view?usp=sharing"
+          class="descargar"
+          target="_blank"
+        >
+          <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <div class="col">
+            <h3>Habilidades Tecnicas</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Php</span>
+              <div class="barra-skill">
+                <div class="progreso"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Laravel</span>
+              <div class="barra-skill">
+                <div class="progreso"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3>Habilidades Profesionales</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Responsabilidad</span>
+              <div class="barra-skill">
+                <div class="progreso"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Ingenieria de Sistemas Computacionales</h4>
+              <span class="casa">Universidad Privada del Norte</span>
+              <span class="fecha"></span>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Desarrollador Backend</h4>
+              <span class="casa">A.C. Enterprises S.A.C.</span>
+              <span class="fecha"></span>
+              <p>
+                ■ Realizar la creacion de una funcion que permita almacenar y ajustar las imagenes  de acuerdo a los requisitos especificos para que se pueda usar desde otro sistema.
+              </p>
+              <br>
+              <p>
+                ■ Realizar test de codigo para verificar ,  asegurar la calidad y el funcionamiento correcto del codigo.
+              </p>
+              <br>
+              <p>
+                ■ Realizar la modificacion de las tablas de datos para mejorar la claridad y el cumplimiento con las normas de nombramiento.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
